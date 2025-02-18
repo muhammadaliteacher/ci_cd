@@ -36,6 +36,6 @@ jobs:
             fi
             npm install
             npm run build
-            pm2 restart ci_cd_app || pm2 dist/main.js --name ci_cd_app
+            pm2 start dist/main.js --name ci_cd_app
           "
         shell: bash
